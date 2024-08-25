@@ -1,0 +1,109 @@
+.--estrellado--accordion {
+  &_container {
+    .accordion_wrapper {
+      margin: auto;
+      max-width: 54rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .accordion_group {
+      padding-inline: 1.5rem;
+
+      &_title {
+        color: black;
+        font-weight: 600;
+        font-size: 21px;
+        margin-bottom: 1.2rem;
+      }
+
+      .accordion {
+        &-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: black;
+          font-size: 18px;
+          padding: 15px 15px;
+          cursor: pointer;
+          margin-bottom: 1px;
+        }
+    
+        &-panel {
+          line-height: 2.7rem;
+          max-height: 0;
+          overflow: hidden;
+    
+          transition: max-height 0.5s ease;
+          &_text {
+            padding: 3rem 1.5rem;
+          }
+        }
+      }
+
+      &#accordion-style1 {
+        .accordion-top {
+          font-weight: 600;
+          background: rgba(173, 181, 189, 0.3);
+
+          &::after {
+            content: "+";
+            font-weight: initial;
+            color: white;
+            background: $clr-accent-orange;
+            padding: 2px 10px;
+          }
+    
+          &.open {
+            &::after {
+              content: "-";
+              padding-inline: 12.5px;
+            }
+          }
+        }
+      }
+
+      &#accordion-style2 {
+        .accordion {
+          &_group_wrapper {
+            border: 1px solid rgba(173, 181, 189, 0.3);;
+          }
+          &-top {
+            border-bottom: 1px solid rgba(173, 181, 189, 0.3);
+            &:hover,
+            &.open {
+              color: $clr-accent-orange;
+            }
+
+            i {
+              transition: 0.3s ease;
+            }
+
+            &.open {
+              i {
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+      }
+
+      &#accordion-style3 {
+        .accordion {
+          &-top {
+            justify-content: flex-start;
+            padding: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+          }
+
+          &-panel {
+            border-left: 5px solid rgba(173, 181, 189, 0.3);
+            margin-left: 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}
