@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a6726e13c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Animations</title>
+    <link rel="icon" type="image/x-icon" href="/dist/img/favicon.ico" />
+    <link rel="stylesheet" href="/dist/scss/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="--builtin--screen_fader"></div>
+    <header class="--builtin--header">
+      <div class="--builtin--header_container">
+        <div class="header_contacts">
+          <div class="header_contacts_wrapper">
+            <div class="header_contacts_pusher"></div>
+            <!-- DO NOT REFORMAT THE A ELEMENTS AS IT CAUSES THE ICONS TO SEPARATE -->
+            <div class="numbers_and_email">
+              <a href="tel:+511234567">
+                <i class="fa-solid fa-phone-flip"></i>
+                +51 123 4567 </a
+              ><a href="tel:+7758724444">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                +775 872 4444 </a
+              ><a href="mailto:contact@email.com">
+                <i class="fa-regular fa-envelope"></i>
+                contact@email.com</a
+              >
+            </div>
+            <div class="socials">
+              <!-- DO NOT REFORMAT THE A ELEMENTS AS IT CAUSES THE ICONS TO SEPARATE -->
+              <a href="javascript:void(0)">
+                <i class="fa-brands fa-facebook"></i> </a
+              ><a href="javascript:void(0)">
+                <i class="fa-brands fa-x-twitter"></i> </a
+              ><a href="javascript:void(0)">
+                <i class="fa-brands fa-youtube"></i> </a
+              ><a href="javascript:void(0)">
+                <i class="fa-brands fa-linkedin"></i> </a
+              ><a href="javascript:void(0)">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_content">
+          <div class="header_content_wrapper">
+            <div class="header_logo_wrapper">
+              <a href="./index.html" class="header_logo"
+                ><img src="./img/logo_main.svg" alt="constructionlogo"
+              /></a>
+            </div>
+            <div class="burger_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu_items">
+              <div class="search_and_caption mobile-only">
+                <i class="fa-solid fa-circle-xmark js_menu_close"></i>
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search ..."
+                />
+              </div>
+              <ul class="menu_items_wrapper">
+                <li class="main_menu_caption mobile-only">Main Menu</li>
+                <li><a href="./index.html" class="home">Home</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="demos js-drop-down outer-most"
+                    >Demos<span class="new_disclaimer">NEW</span
+                    ><i class="fa-solid fa-chevron-down menu_show_more_icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="pages js-drop-down outer-most"
+                    >Pages<i
+                      class="fa-solid fa-chevron-down menu_show_more_icon"
+                    ></i
+                  ></a>
+                  <ul class="drop-down-content">
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="services js-drop-down inner-category"
+                        >Services<i
+                          class="fa-solid fa-chevron-down menu_show_more_icon"
+                        ></i
+                      ></a>
+                      <ul class="drop-down-content">
+                        <li><a href="./services_construction.html">Services Construction</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="projects js-drop-down outer-most"
+                    >Projects<i
+                      class="fa-solid fa-chevron-down menu_show_more_icon"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="blog js-drop-down outer-most"
+                    >Blog<i
+                      class="fa-solid fa-chevron-down menu_show_more_icon"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="features js-drop-down outer-most"
+                    id="highlighted-tab"
+                    >Features<i
+                      class="fa-solid fa-chevron-down menu_show_more_icon"
+                    ></i
+                  ></a>
+                  <ul class="drop-down-content">
+                    <li><a href="./features_animations.html">Animations</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="page_builder js-drop-down outer-most"
+                    >Page Builder<i
+                      class="fa-solid fa-chevron-down menu_show_more_icon"
+                    ></i
+                  ></a>
+                  <ul class="drop-down-content">
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="js-drop-down inner-category"
+                        >Addons 1<i
+                          class="fa-solid fa-chevron-down menu_show_more_icon"
+                        ></i
+                      ></a>
+                      <ul class="drop-down-content">
+                        <li><a href="./pagebuilder_accordion.html">Accordion</a></li>
+                        <li><a href="./pagebuilder_carousel.html">Carousel Pro</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="contacts_socials_container mobile-only">
+                <ul class="contacts_wrapper">
+                  <li>
+                    <a href="tel:511234567"
+                      ><i class="fa-solid fa-phone-flip"></i>+51 123 4567</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:7758724444"
+                      ><i class="fa-solid fa-mobile-screen-button"></i>+775 872
+                      4444</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:contact@email.com"
+                      ><i class="fa-regular fa-envelope"></i
+                      >contact@email.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="socials_wrapper">
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="--builtin--back_to_top"><i class="fa-solid fa-chevron-down"></i></div>
+
+    <!-- Please put all HTML here to prevent CSS/JS conflicts, thank you! -->
+    <main class="--olbega--animations main-content">
+      <div class="--olbega--animations_container">
+        <article class="--builtin--hero">
+          <h2>Animations</h2>
+          <div class="path_desc">
+            <div class="path_desc_wrapper">
+              <i class="fa-solid fa-location-dot"></i><a href="./index.html">Home</a><a href="javascript:void(0)">Features</a>Animations
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="--builtin--footer">
+      <div class="--builtin--footer_container">
+        <div class="section">
+          <div class="section_title">About Construction</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            adipiscing erat eget risus sollicitudin pellentesque .
+          </div>
+          <div class="additional_descriptor">
+            <i class="fa-solid fa-clock"></i>
+            <div class="additional_descriptor_text">
+              <div class="additional_descriptor_text_title">Open Hours</div>
+              <div class="additional_descriptor_text_subheading">
+                Mon - Sat 08:00 to 19:00
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section_title">Our Company</div>
+          <div class="links">
+            <ul>
+              <li><a href="javascript:void(0)">About Company</a></li>
+              <li><a href="javascript:void(0)">Our Main Services</a></li>
+              <li><a href="javascript:void(0)">Our Project Gallery</a></li>
+              <li><a href="javascript:void(0)">News And Guides</a></li>
+              <li><a href="javascript:void(0)">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section_title">Peruvian Offices</div>
+          <div class="additional_descriptor">
+            <i class="fa-solid fa-location-pin"></i>
+            <div class="additional_descriptor_text">
+              <div class="additional_descriptor_text_subheading">
+                Tupac Amaru 200 - Comas
+                <br>
+                Lima - Peru
+              </div>
+            </div>
+          </div>
+          <div class="additional_descriptor">
+            <i class="fa-solid fa-phone-flip"></i>
+            <div class="additional_descriptor_text">
+              <div class="additional_descriptor_text_subheading">
+                Office: +515574657
+                <br>
+                Mobile: +51930860275
+              </div>
+            </div>
+          </div>
+          <div class="additional_descriptor">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <div class="additional_descriptor_text">
+              <div class="additional_descriptor_text_subheading">
+                partners@yoursite.xyz
+                <br>
+                information@youtsite.xyz
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section_title">Our Branches</div>
+          <img src="./img/world_map.png" alt="world-map">
+        </div>
+      </div>
+      <div class="legal_and_socials">
+        <div class="legal_and_socials_wrapper">
+          <div class="legal_and_socials_copyright_info">
+            © 2024 Your Company - By <span>Unitemplates</span>
+          </div>
+          <div class="legal_and_socials_icon_links">
+            <ul>
+              <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/--builtin--header_script.js"></script>
+    <script src="./js/--olbega--animations_script.js"></script>
+  </body>
+</html>
