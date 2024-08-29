@@ -1,0 +1,106 @@
+.olvega{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .olvega_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 3rem;
+            
+            .olvega_animations_content{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                align-items: center;
+                padding: 7rem 0rem 7rem 0rem;
+                width: 70%;
+                gap: 2rem;
+                img{
+                    width: 350px;
+                }
+
+                .olvega_content_text{
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    
+
+                    
+                }
+            }
+            
+        }
+        .olvega_container:nth-child(even){
+            
+            .olvega_animations_content{
+                flex-direction: row-reverse;
+            }
+        }
+        .olvega_container:nth-child(1){
+            
+            .olvega_animations_content{
+               img{
+                animation: fadein 3s ease;
+               }
+            }
+        }
+        .olvega_container:nth-child(2){
+            
+            .olvega_animations_content{
+               img{
+                animation: fadebot 2s ease;
+               }
+            }
+        }
+        .olvega_container:nth-child(3){
+            
+            .olvega_animations_content{
+               img{
+                animation: fadebotbig 3s ease;
+               }
+            }
+        }
+       
+
+}
+
+
+
+
+//animations//
+@keyframes fadebot {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0  ;
+      
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+@keyframes fadebotbig {
+    0% {
+      transform: translateY(-500px);
+      opacity: 0  ;
+      
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    0% {
+      
+      opacity: 0  ;
+    }
+    100% {
+
+      opacity: 1;
+    }
+  }
