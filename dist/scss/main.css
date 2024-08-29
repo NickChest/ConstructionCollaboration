@@ -48,14 +48,14 @@ body {
   position: relative;
 }
 .banner-wrapper {
-  position: relative;
+  position: absolute;
   top: 25%;
-  left: 43%;
+  left: 50%;
   margin: 0 auto;
   width: 85%;
   max-width: 57rem;
   text-align: center;
-  translate: -50%;
+  transform: translateX(-50%);
 }
 .banner-wrapper h4 {
   color: #ffa500;
@@ -267,14 +267,9 @@ body {
     height: 100vh;
   }
   .banner-wrapper {
-    position: relative;
-    top: 25%;
-    left: 19%;
-    margin: 0 auto;
     width: 85%;
     max-width: 70rem;
     text-align: center;
-    translate: -50%;
   }
   .banner-wrapper h4 {
     font-size: 17px;
