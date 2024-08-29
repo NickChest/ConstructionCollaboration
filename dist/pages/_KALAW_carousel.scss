@@ -3,7 +3,7 @@
 .slide-container {
     position: relative;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
     height: 600px;
     margin: 0 auto;
     overflow: hidden;
@@ -56,14 +56,32 @@
 
             .info {
                 position: absolute;
-                bottom: 200px;
-                left: 40px;
+                bottom: 240px;
+                left: 70px;
                 color: white;
                 padding: 10px;
                 border-radius: 5px;
                 z-index: 2; 
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                p {
+                    color: $clr-accent-light-gray-2;
+                    margin: 10px;
+                }
+
+                .first-button {
+                    position: relative;
+                    top: 20px;
+                    background-color: $clr-accent-orange;
+                    padding: 15px 25px;
+                    border-radius: 5px;
+                }
             }
         }
+        
     }
 
     span.next,
