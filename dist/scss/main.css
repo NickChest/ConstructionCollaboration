@@ -444,6 +444,112 @@ body {
     max-width: 64rem;
     margin: 0 auto;
   }
+  .awesome-inner-pages-images {
+    padding: 2rem;
+    background-color: #e9ecef;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    row-gap: auto;
+  }
+  .awesome-inner-pages-images img {
+    width: 45rem;
+  }
+  .awesome-inner-pages-images-container {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .awesome-inner-pages-images-container h2 {
+    padding: 2rem 0 2rem 0;
+  }
+  .awesome-inner-pages-images-container p {
+    font-size: 10px;
+  }
+  .awesome-inner-pages-container-wrapper {
+    background-color: #e9ecef;
+  }
+  .awesome-inner-pages-container-wrapper h2 {
+    padding-top: 4rem;
+    font-size: 15px;
+    text-align: center;
+    color: #ffa500;
+  }
+  .awesome-inner-pages-container-wrapper h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+  }
+  .awesome-inner-pages-container-wrapper p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+  .awesome-inner-pages .design-top {
+    background-color: #e9ecef;
+    margin: 0 auto;
+    width: 37rem;
+    position: relative;
+    height: 6rem;
+  }
+  .awesome-inner-pages .design-top::after {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 60px 32px;
+    border-color: transparent transparent #e9ecef transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 100%;
+  }
+  .awesome-inner-pages .design-top::before {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 60px 0 0 32px;
+    border-color: transparent transparent transparent #e9ecef;
+    transform: rotate(0deg);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 100%;
+  }
+  .awesome-inner-pages .design-bottom {
+    background-color: #e9ecef;
+    margin: 0 auto;
+    width: 0rem;
+    position: relative;
+    height: 6rem;
+  }
+  .awesome-inner-pages .design-bottom::after {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 32000px 60px 0;
+    border-color: transparent #e9ecef transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    content: "";
+    right: 100%;
+  }
+  .awesome-inner-pages .design-bottom::before {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 60px 32px 0 0;
+    border-color: #e9ecef transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 100%;
+  }
 }
 .--builtin--footer {
   transition: 0.7s ease;
