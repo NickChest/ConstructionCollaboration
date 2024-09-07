@@ -633,6 +633,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.olvega p {
+  font-size: 16px;
+  color: #767676;
+}
+.olvega h3 {
+  font-size: 23px;
+}
 .olvega .olvega_container {
   display: flex;
   flex-direction: row;
@@ -655,6 +662,7 @@ body {
   display: flex;
   flex-direction: column;
   color: black;
+  gap: 1rem;
 }
 .olvega .olvega_container:nth-child(even) .olvega_animations_content {
   flex-direction: row-reverse;
@@ -667,6 +675,27 @@ body {
 }
 .olvega .olvega_container:nth-child(3) .olvega_animations_content img {
   animation: fadebotbig 3s ease;
+}
+.olvega .olvega_container:nth-child(4) .olvega_animations_content img {
+  animation: FadeInLeft 3s ease;
+}
+.olvega .olvega_container:nth-child(5) .olvega_animations_content img {
+  animation: FadeInLeftBig 3s ease;
+}
+.olvega .olvega_container:nth-child(6) .olvega_animations_content img {
+  animation: FadeInRight 3s ease;
+}
+.olvega .olvega_container:nth-child(7) .olvega_animations_content img {
+  animation: fadein 3s ease;
+}
+.olvega .olvega_container:nth-child(8) .olvega_animations_content img {
+  animation: FadeInRightBig 0.3s ease;
+}
+.olvega .olvega_container:nth-child(9) .olvega_animations_content img {
+  animation: FadeInUp 3s ease;
+}
+.olvega .olvega_container:nth-child(10) .olvega_animations_content img {
+  animation: FadeInUpBig 3s ease;
 }
 
 @keyframes fadebot {
@@ -697,6 +726,98 @@ body {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+@keyframes FadeInLeft {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeInLeftBig {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeInRight {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeInRightBig {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeInUpBig {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes Flipn {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes Flipx {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes Flipy {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+}
+=======
 /* KALAW CAROUSEL */
 .slides-container-wrapper .slide-container {
   position: relative;
@@ -1191,6 +1312,7 @@ body {
   transform: rotate(-90deg);
 }
 
+>>>>>>> a37f217829c0c7306e2d4cdb0717e2085366610c
 .--builtin--footer {
   transition: 0.7s ease;
   background: #171717;
