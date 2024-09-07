@@ -43,3 +43,13 @@ function funcScopePanelCloser(topElement) {
     // seeing if the elements were actually in the "shared parent" wrapper
   })
 }
+
+window.addEventListener('resize', () => {
+  accordionClosedElements.forEach(accordionTop => {
+    const accordionPanelElement = accordionTop.nextElementSibling
+
+    if (accordionTop.classList.contains('open')) {
+      accordionPanelElement.style.maxHeight = accordionPanelElement.scrollHeight + "px";
+    }
+  })
+})
