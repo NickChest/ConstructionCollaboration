@@ -1,9 +1,9 @@
-let slides = document.querySelectorAll('.slide');
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
-let dots = document.querySelectorAll('.dot');
+const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const dots = document.querySelectorAll('.dot');
 
-var counter = 0;
+let counter = 0;
 
 next.addEventListener('click', () => {
     slideNext();
@@ -39,6 +39,11 @@ function updateDots() {
     dots.forEach(dot => dot.classList.remove('active'));
     dots[counter].classList.add('active');
 }
+
+setInterval(() => {
+  slideNext();
+  updateDots();
+}, 5000)
 
 // CAROUSEL TWO
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,8 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     showSlide(currentIndex);
+
+    setInterval(() => {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex, 'next')
+    }, 5000);
   });
 
+
+  // THIRD CAROUSEL
   document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.third-slide');
     const nextButton = document.querySelector('.third-next');
@@ -89,19 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function showSlide(index, direction) {
       slides.forEach((slide, i) => {
-        slide.classList.remove('active', 'exit-left', 'exit-right', 'enter-right', 'enter-left');
+        slide.classList.remove('active', 'exit-top', 'exit-bot', 'enter-bot', 'enter-top');
         if (i === index) {
           slide.classList.add('active');
           if (direction === 'prev') {
-            slide.classList.add('enter-left');
+            slide.classList.add('enter-top');
           } else {
-            slide.classList.add('enter-right');
+            slide.classList.add('enter-bot');
           }
         } else if (i === currentIndex) {
           if (direction === 'next') {
-            slide.classList.add('exit-left');
+            slide.classList.add('exit-top');
           } else if (direction === 'prev') {
-            slide.classList.add('exit-right');
+            slide.classList.add('exit-bot');
           }
         }
       });
@@ -119,6 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     showSlide(currentIndex);
+
+    setInterval(() => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex, 'next')
+    }, 5000);
   });
   
   

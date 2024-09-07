@@ -389,7 +389,7 @@
       
       // THIRD CAROUSEL
 
-          @keyframes slideInFromLeft {
+          @keyframes slideInFromTop {
         0% {
           transform: translateY(-100%);
           opacity: 0;
@@ -400,7 +400,7 @@
         }
       }
       
-      @keyframes slideOutToRight {
+      @keyframes slideOutToBot {
         0% {
           transform: translateY(0);
           opacity: 1;
@@ -411,7 +411,7 @@
         }
       }
       
-      @keyframes slideInFromRight {
+      @keyframes slideInFromBot {
         0% {
           transform: translateY(100%);
           opacity: 0;
@@ -422,7 +422,7 @@
         }
       }
       
-      @keyframes slideOutToLeft {
+      @keyframes slideOutToTop {
         0% {
           transform: translateY(0);
           opacity: 1;
@@ -458,23 +458,23 @@
             opacity: 0;
       
             &.active {
-              animation: slideInFromLeft 0.5s forwards;
+              animation: slideInFromTop 0.5s forwards;
             }
       
-            &.exit-left {
-              animation: slideOutToLeft 0.5s forwards;
+            &.exit-top {
+              animation: slideOutToTop 0.5s forwards;
             }
       
-            &.exit-right {
-              animation: slideOutToRight 0.5s forwards;
+            &.exit-bot {
+              animation: slideOutToBot 0.5s forwards;
             }
       
-            &.enter-right {
-              animation: slideInFromRight 0.5s forwards;
+            &.enter-bot {
+              animation: slideInFromBot 0.5s forwards;
             }
       
-            &.enter-left {
-              animation: slideInFromLeft 0.5s forwards;
+            &.enter-top{
+              animation: slideInFromTop 0.5s forwards;
             }
       
             img {

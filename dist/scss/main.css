@@ -1039,7 +1039,7 @@ body {
   right: 60rem;
   margin-top: 25rem;
 }
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
     opacity: 0;
@@ -1049,7 +1049,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes slideOutToRight {
+@keyframes slideOutToBot {
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -1059,7 +1059,7 @@ body {
     opacity: 0;
   }
 }
-@keyframes slideInFromRight {
+@keyframes slideInFromBot {
   0% {
     transform: translateY(100%);
     opacity: 0;
@@ -1069,7 +1069,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes slideOutToLeft {
+@keyframes slideOutToTop {
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -1105,19 +1105,19 @@ body {
   opacity: 0;
 }
 .slides-container-wrapper .third-slide-container .third-slides .third-slide.active {
-  animation: slideInFromLeft 0.5s forwards;
+  animation: slideInFromTop 0.5s forwards;
 }
-.slides-container-wrapper .third-slide-container .third-slides .third-slide.exit-left {
-  animation: slideOutToLeft 0.5s forwards;
+.slides-container-wrapper .third-slide-container .third-slides .third-slide.exit-top {
+  animation: slideOutToTop 0.5s forwards;
 }
-.slides-container-wrapper .third-slide-container .third-slides .third-slide.exit-right {
-  animation: slideOutToRight 0.5s forwards;
+.slides-container-wrapper .third-slide-container .third-slides .third-slide.exit-bot {
+  animation: slideOutToBot 0.5s forwards;
 }
-.slides-container-wrapper .third-slide-container .third-slides .third-slide.enter-right {
-  animation: slideInFromRight 0.5s forwards;
+.slides-container-wrapper .third-slide-container .third-slides .third-slide.enter-bot {
+  animation: slideInFromBot 0.5s forwards;
 }
-.slides-container-wrapper .third-slide-container .third-slides .third-slide.enter-left {
-  animation: slideInFromLeft 0.5s forwards;
+.slides-container-wrapper .third-slide-container .third-slides .third-slide.enter-top {
+  animation: slideInFromTop 0.5s forwards;
 }
 .slides-container-wrapper .third-slide-container .third-slides .third-slide img {
   width: 100%;
