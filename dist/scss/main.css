@@ -726,7 +726,6 @@ body {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
 @keyframes FadeInLeft {
   0% {
     transform: translateX(-20px);
@@ -817,7 +816,6 @@ body {
     opacity: 1;
   }
 }
-=======
 /* KALAW CAROUSEL */
 .slides-container-wrapper .slide-container {
   position: relative;
@@ -1312,7 +1310,6 @@ body {
   transform: rotate(-90deg);
 }
 
->>>>>>> a37f217829c0c7306e2d4cdb0717e2085366610c
 .--builtin--footer {
   transition: 0.7s ease;
   background: #171717;
