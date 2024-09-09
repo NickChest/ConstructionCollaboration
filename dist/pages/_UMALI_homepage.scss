@@ -1494,19 +1494,17 @@
   }
 
   &-2-wrapper {
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     background-color: #e9ecef;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 2rem;
-    row-gap: auto;
     place-items: center;
     width: fit-content;
     text-align: center;
     
     img {
-      width: 44rem;
+      width: 100%;
     }
 
     h1 {
@@ -1534,7 +1532,7 @@
         width: fit-content;
         
         img {
-          width: 44rem;
+          width: 100%;
         }
       }
     }
