@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
     showSlide(currentIndex);
 
-    setInterval(() => {
-        const nextIndex = (currentIndex + 1) % slides.length;
-        showSlide(nextIndex, 'next')
-    }, 5000);
+    // setInterval(() => {
+    //     const nextIndex = (currentIndex + 1) % slides.length;
+    //     showSlide(nextIndex, 'next')
+    // }, 5000);
   });
 
 
@@ -132,10 +132,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
     showSlide(currentIndex);
 
-    setInterval(() => {
-      const nextIndex = (currentIndex + 1) % slides.length;
-      showSlide(nextIndex, 'next')
-    }, 5000);
+    // setInterval(() => {
+    //   const nextIndex = (currentIndex + 1) % slides.length;
+    //   showSlide(nextIndex, 'next')
+    // }, 5000);
   });
   
   
