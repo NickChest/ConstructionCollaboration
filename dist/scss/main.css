@@ -1545,6 +1545,15 @@ body {
     animation: BounceInUp 0.3s ease;
   }
 }
+img {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+img.animate {
+  opacity: 1;
+}
+
 /* KALAW CAROUSEL */
 .slides-container-wrapper .slide-container {
   position: relative;

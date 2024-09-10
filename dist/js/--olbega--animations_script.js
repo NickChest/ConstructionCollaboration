@@ -28,3 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(container);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.olvega_animations_content img');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, {
+        threshold: 0.5  
+    });
+
+    images.forEach(img => {
+        observer.observe(img);
+    });
+});
