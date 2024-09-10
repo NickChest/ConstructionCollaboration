@@ -2361,97 +2361,95 @@ body {
       transform: translateY(0);
     }
   }
-  .img-fadein {
+  .olvega .img-fadein {
     animation: fadein 3s ease;
   }
-  .img-fadebot {
+  .olvega .img-fadebot {
     animation: fadebot 2s ease;
   }
-  .img-fadebotbig {
+  .olvega .img-fadebotbig {
     animation: fadebotbig 3s ease;
   }
-  .img-FadeInLeft {
+  .olvega .img-FadeInLeft {
     animation: FadeInLeft 3s ease;
   }
-  .img-FadeInLeftBig {
+  .olvega .img-FadeInLeftBig {
     animation: FadeInLeftBig 3s ease;
   }
-  .img-FadeInRight {
+  .olvega .img-FadeInRight {
     animation: FadeInRight 3s ease;
   }
-  .img-FadeInRightBig {
+  .olvega .img-FadeInRightBig {
     animation: FadeInRightBig 3s ease;
   }
-  .img-FadeInUp {
+  .olvega .img-FadeInUp {
     animation: FadeInUp 0.3s ease;
   }
-  .img-FadeInUpBig {
+  .olvega .img-FadeInUpBig {
     animation: FadeInUpBig 3s ease;
   }
-  .img-Flipx {
+  .olvega .img-Flipx {
     animation: Flipx 3s ease;
   }
-  .img-Flipx-short {
+  .olvega .img-Flipx-short {
     animation: Flipx 0.3s ease;
   }
-  .img-Flipy {
+  .olvega .img-Flipy {
     animation: Flipy 0.3s ease;
   }
-  .img-RotateIn {
+  .olvega .img-RotateIn {
     animation: RotateIn 0.3s ease;
   }
-  .img-RotateInDownLeft {
+  .olvega .img-RotateInDownLeft {
     animation: RotateInDownLeft 0.3s ease;
   }
-  .img-RotateInDownRight {
+  .olvega .img-RotateInDownRight {
     animation: RotateInDownRight 0.3s ease;
   }
-  .img-RotateInUpLeft {
+  .olvega .img-RotateInUpLeft {
     animation: RotateInUpLeft 0.3s ease;
   }
-  .img-RotateInUpRight {
+  .olvega .img-RotateInUpRight {
     animation: RotateInUpRight 0.3s ease;
   }
-  .img-ZoomIn {
+  .olvega .img-ZoomIn {
     animation: ZoomIn 0.3s ease;
   }
-  .img-ZoomInDown {
+  .olvega .img-ZoomInDown {
     animation: ZoomInDown 0.3s ease;
   }
-  .img-ZoomInLeft {
+  .olvega .img-ZoomInLeft {
     animation: ZoomInLeft 0.3s ease;
   }
-  .img-ZoomInRight {
+  .olvega .img-ZoomInRight {
     animation: ZoomInRight 0.3s ease;
   }
-  .img-ZoomInUp {
+  .olvega .img-ZoomInUp {
     animation: ZoomInUp 0.3s ease;
   }
-  .img-BounceIn {
+  .olvega .img-BounceIn {
     animation: BounceIn 0.3s ease;
   }
-  .img-BounceInDown {
+  .olvega .img-BounceInDown {
     animation: BounceInDown 0.3s ease;
   }
-  .img-BounceInLeft {
+  .olvega .img-BounceInLeft {
     animation: BounceInLeft 0.3s ease;
   }
-  .img-BounceInRight {
+  .olvega .img-BounceInRight {
     animation: BounceInRight 0.3s ease;
   }
-  .img-BounceInUp {
+  .olvega .img-BounceInUp {
     animation: BounceInUp 0.3s ease;
   }
+  .olvega img {
+    opacity: 0;
+    transition: opacity 3s ease;
+  }
+  .olvega img.animate {
+    opacity: 1;
+  }
 }
-img {
-  opacity: 0;
-  transition: opacity 3s ease;
-}
-
-img.animate {
-  opacity: 1;
-}
-
 /* KALAW CAROUSEL */
 .--builtin--page_title p {
   margin-top: 4rem;
