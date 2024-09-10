@@ -455,6 +455,7 @@
           display: flex;
           flex-direction: column;
           top: 150px;
+          max-width: 50rem;
 
           h2 {
             font-size: 32px;
@@ -515,10 +516,10 @@
           width: 650px;
           .img-div {
             top: 0 !important;
-            left: 80% !important;
+            transform: translateX(58rem);
             margin-top: 50px;
             display: unset;
-            
+            max-width: 50rem;
           }
         }
       }

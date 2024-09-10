@@ -1610,6 +1610,7 @@ body {
   display: flex;
   flex-direction: column;
   top: 150px;
+  max-width: 50rem;
 }
 .slides-container-wrapper .third-slide-container .third-slides .third-slide .info h2 {
   font-size: 32px;
@@ -1665,9 +1666,10 @@ body {
   }
   .slides-container-wrapper .third-slide-container .third-slide .info .img-div {
     top: 0 !important;
-    left: 80% !important;
+    transform: translateX(58rem);
     margin-top: 50px;
     display: unset;
+    max-width: 50rem;
   }
 }
 
