@@ -3527,6 +3527,7 @@ body {
   background: #212529;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
 .--builtin--hero h2 {
   font-size: 3.5rem;
