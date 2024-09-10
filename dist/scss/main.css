@@ -333,7 +333,6 @@ body {
   width: fit-content;
 }
 .awesome-inner-pages-images-container h2 {
-  padding-top: 5rem;
   margin: 2rem 0 2rem 0;
   cursor: pointer;
   transition: 0.3s ease;
@@ -951,6 +950,15 @@ body {
     grid-column: -3/-1;
     place-content: center;
   }
+  .choose-construction .wrapper {
+    max-width: 100%;
+  }
+  .choose-construction .circle-columns-wrapper {
+    max-width: 100% !important;
+  }
+  .your-next-website {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 990px) {
   .banner {
@@ -1062,7 +1070,7 @@ body {
     row-gap: auto;
   }
   .prebuilt-websites-images img {
-    width: 55rem;
+    width: 100%;
   }
   .prebuilt-websites-images-container {
     width: -moz-fit-content;

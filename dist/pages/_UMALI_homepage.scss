@@ -340,7 +340,6 @@
       width: fit-content;
 
       h2 {
-        padding-top: 5rem;
         margin: 2rem 0 2rem 0;
         cursor: pointer;
         transition: 0.3s ease;
@@ -1069,6 +1068,23 @@
       place-content: center;
     }
   }
+
+  .choose-construction {
+    .wrapper {
+      max-width: 100%;
+    }
+
+    .circle-columns {
+      &-wrapper {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .your-next-website {
+    max-width: 100%;
+  }
+
 }
 
 @include mediaQuery($break-lg) {
@@ -1198,7 +1214,7 @@
       gap: 2rem;
       row-gap: auto;
       img {
-        width: 55rem;
+        width: 100%;
       }
 
       &-container {
